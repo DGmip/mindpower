@@ -29,6 +29,6 @@ func main() {
 
 	root.Run("home", "GET")
 
-	panic(http.ListenAndServe(":80", root.HttpRouter()))
+	panic(http.ListenAndServe(":8080", root.HttpRouter()))
 
 }
