@@ -28,6 +28,7 @@ func main() {
 	root := gf.Router("mindpower", handlers)
 
 	root.Run("home", "GET")
+	root.Run("research", "GET")
 
 	panic(http.ListenAndServe(":8080", root.HttpRouter()))
 
