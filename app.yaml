@@ -1,4 +1,4 @@
-application: yeoman-angular-seed
+application: esoteric-storm-145212
 version: v1
 runtime: go
 api_version: go1
@@ -27,6 +27,9 @@ handlers:
 
   - url: /styles
     static_dir: dist/styles
+
+  - url: /images
+    static_dir: images
 
   - url: /$
     mime_type: text/html
@@ -57,3 +60,8 @@ skip_files:
   - ^grunt\.js
   - ^node_modules/(.*/)?
   - (.*).sass$
+  - ^tags$
+  # this is just here to speed up the deploy process, for now
+  - ^images/(.*)
+  ## remove this file
+  - ^images/images\.list$
