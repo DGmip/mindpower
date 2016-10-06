@@ -1,4 +1,3 @@
-# Yeoman Angular Seed
+# Mindpower store website
 
-A seed for yeoman angular generator that has been tested to work properly (at least on my system)
-
+Initiated with [yeoman-angular-seed](http://github.com/dgmip/yeoman-angular-seed)

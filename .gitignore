@@ -2,8 +2,7 @@
 /dist
 /.tmp
 /.sass-cache
-/bower_components
-*.swo
+*.sw(po)
 *.swp
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
@@ -15,5 +14,5 @@ session.vim
 /dist
 /.tmp
 /.sass-cache
-/bower_components
+/bower_components/(.*/)?
 tags
