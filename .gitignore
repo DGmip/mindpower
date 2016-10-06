@@ -16,3 +16,4 @@ session.vim
 /.sass-cache
 /bower_components/(.*/)?
 tags
+/images/(.*)

@@ -60,7 +60,6 @@ skip_files:
   - ^grunt\.js
   - ^node_modules/(.*/)?
   - (.*).sass$
-  - ^tags$
   # this is just here to speed up the deploy process, for now
   - ^images/(.*)
   ## remove this file
