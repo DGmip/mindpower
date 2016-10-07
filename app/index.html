@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="mindpowerApp" layout='column' layout-align='start center'>
+  <body ng-app="mindpowerApp" layout='column' layout-align='start center' ng-controller='IndexCtrl as index'>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <h1 hide-gt-sm>Real Mind Power Secrets</h1>
     <div layout='row' layout-align='center center' style="min-height:136px;">
       <!-- hidden h1 for SEO -->
-      <h1 hide show-sm>Real Mind Power Secrets</h1>
-      <img hide show-gt-sm src="images/newrmpsheader11.jpg" alt="Real Mind Power Secrets" />
-      <ul class="nav navbar-nav">
+      <img class="banner" hide show-gt-sm src="images/newrmpsheader11.jpg" alt="Real Mind Power Secrets" />
+      <ul class="nav" layout='column' layout-align='start center'>
         <li class="active">
           <a href="#/">
             <md-button class="md-raised md-primary" aria-label="Get the FREE book button">
@@ -42,7 +42,7 @@
       </ul>
     </div>
 
-    <div id="content" ng-view=""></div>
+    <div id="content" ng-view></div>
 
     <div id="footer">
       <ul>
@@ -90,6 +90,7 @@
         <script src="scripts/controllers/privacy-policy.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/controllers/affiliates.js"></script>
+        <script src="scripts/controllers/index.js"></script>
         <!-- endbuild -->
 </body>
 </html>
