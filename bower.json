@@ -1,5 +1,5 @@
 {
-  "name": "seed",
+  "name": "mindpower",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.4.0",
@@ -16,5 +16,5 @@
     "angular-material": "^1.1.1"
   },
   "appPath": "app",
-  "moduleName": "seedApp"
+  "moduleName": "mindpowerApp"
 }

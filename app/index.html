@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Real Mind Power Secrets</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -15,19 +15,48 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="seedApp">
+  <body ng-app="mindpowerApp" layout='column' layout-align='start center'>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#/">Home</a></li>
-      <li><a ng-href="#/about">About</a></li>
-      <li><a ng-href="#/">Contact</a></li>
-    </ul>
-    <div ng-view=""></div>
+    <div layout='row' layout-align='center center' style="min-height:136px;">
+      <!-- hidden h1 for SEO -->
+      <h1 hide show-sm>Real Mind Power Secrets</h1>
+      <img hide show-gt-sm src="images/newrmpsheader11.jpg" alt="Real Mind Power Secrets" />
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#/">
+            <md-button class="md-raised md-primary" aria-label="Get the FREE book button">
+              Get the free book
+            </md-button>
+          </a>
+        </li>
+        <li>
+          <a ng-href="#/about">
+            <md-button class="md-raised md-primary" aria-label=" button">
+              The full research
+            </md-button>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="content" ng-view=""></div>
+
+    <div id="footer">
+      <ul>
+        <li><a href="#/privacy-policy">Privacy Policy</a></li>
+        <li><a href="#/about">About Us</a></li>
+        <li><a href="#/affiliates">Affiliates</a></li>
+        <li><a href="#/contact">Contact Us</a></li>
+        <li>&copy; RealMindPowerSecrets.com</li>
+      </ul>
+    </div>
+      <!-- Privacy Policy About Us affiliates Contact Us     © 2015 RealMindPowerSecrets.com -->
 
 
+    </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -58,6 +87,9 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/privacy-policy.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/affiliates.js"></script>
         <!-- endbuild -->
 </body>
 </html>

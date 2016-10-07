@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name mindpowerApp.controller:AboutCtrl
+ * @name mindpowerApp.controller:AffiliatesCtrl
  * @description
- * # AboutCtrl
+ * # AffiliatesCtrl
  * Controller of the mindpowerApp
  */
 angular.module('mindpowerApp')
-  .controller('AboutCtrl', function () {
+  .controller('AffiliatesCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -2,20 +2,20 @@
 
 /**
  * @ngdoc overview
- * @name seedApp
+ * @name mindpowerApp
  * @description
- * # seedApp
+ * # mindpowerApp
  *
  * Main module of the application.
  */
 angular
-  .module('seedApp', [
+  .module('mindpowerApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -28,6 +28,21 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/privacy-policy', {
+        templateUrl: 'views/privacy-policy.html',
+        controller: 'PrivacyPolicyCtrl',
+        controllerAs: 'privacyPolicy'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
+      .when('/affiliates', {
+        templateUrl: 'views/affiliates.html',
+        controller: 'AffiliatesCtrl',
+        controllerAs: 'affiliates'
       })
       .otherwise({
         redirectTo: '/'

@@ -3,7 +3,7 @@
 describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('seedApp'));
+  beforeEach(module('mindpowerApp'));
 
   var AboutCtrl,
     scope;

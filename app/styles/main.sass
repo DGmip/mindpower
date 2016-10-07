@@ -1,8 +1,74 @@
 // bower:scss
 // endbower
 
+@import 'colours'
 .browsehappy
   margin: 0.2em 0
   background: #ccc
   color: #000
   padding: 0.2em 0
+
+ul
+  list-style-type: none
+
+a
+  text-decoration: none
+  color: $black
+  &:visited
+    color: $black
+  &:hover
+    text-decoration: underline
+  &.underline
+    text-decoration: underline
+
+.bold
+  font-weight: bold
+
+h3
+  text-align: center
+
+span.underline
+  text-decoration: underline
+
+.blue
+  color: $blue
+
+#content
+  margin: 0 6%
+
+.feedback
+  border-bottom: 1px solid $divider-grey
+  &:last-child
+    border-bottom: none
+.feedback, .section
+  padding: 5px
+  .title, .signature
+    font-style: italic
+  .title
+    margin-top: 10px
+    color: $blue
+    font-size: 1.3em
+  .signature
+    float: right
+    font-weight: bold
+    padding-bottom: 10px
+  .body
+    padding-bottom: 10px
+
+#footer
+  margin-bottom: 10px
+  ul
+    list-style-type: none
+    li
+      float: left
+      margin-left: 35px
+      &:first-child
+        margin-left: 0px
+
+#get-free-book-form
+  input[type=submit]
+    background-color: $button-blue
+    margin: 20px
+
+button
+  background-color: $button-blue

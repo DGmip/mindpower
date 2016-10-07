@@ -1,23 +1,23 @@
-'seeduse strict';
+'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: AffiliatesCtrl', function () {
 
   // load the controller's module
   beforeEach(module('mindpowerApp'));
 
-  var MainCtrl,
+  var AffiliatesCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    AffiliatesCtrl = $controller('AffiliatesCtrl', {
       $scope: scope
       // place here mocked dependencies
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
+    expect(AffiliatesCtrl.awesomeThings.length).toBe(3);
   });
 });

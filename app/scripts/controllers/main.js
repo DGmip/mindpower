@@ -2,16 +2,14 @@
 
 /**
  * @ngdoc function
- * @name seedApp.controller:MainCtrl
+ * @name mindpowerApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the seedApp
+ * Controller of the mindpowerApp
  */
-angular.module('seedApp')
+angular.module('mindpowerApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    this.submitGetFreeBookForm = function() {
+      window.alert('submit');
+    };
   });

@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name mindpowerApp.controller:AboutCtrl
+ * @name mindpowerApp.controller:ContactCtrl
  * @description
- * # AboutCtrl
+ * # ContactCtrl
  * Controller of the mindpowerApp
  */
 angular.module('mindpowerApp')
-  .controller('AboutCtrl', function () {
+  .controller('ContactCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

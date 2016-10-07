@@ -10,7 +10,7 @@ handlers:
 
   - url: /favicon\.ico
     static_files: favicon\.ico
-    upload: favicon.ico
+    upload: favicon\.ico
 
   # - url: /scripts/(.*\.js)
   #   mime_type: text/javascript
@@ -29,7 +29,7 @@ handlers:
     static_dir: dist/styles
 
   - url: /images
-    static_dir: images
+    static_dir: dist/images
 
   - url: /$
     mime_type: text/html
@@ -61,6 +61,6 @@ skip_files:
   - ^node_modules/(.*/)?
   - (.*).sass$
   # this is just here to speed up the deploy process, for now
-  - ^images/(.*)
+  # - ^app/images/(.*)
   ## remove this file
-  - ^images/images\.list$
+  # - ^images/images\.list$
